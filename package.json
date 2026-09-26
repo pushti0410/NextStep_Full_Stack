@@ -1,0 +1,16 @@
+{
+  "name": "nextstep-end-to-end",
+  "version": "1.0.0",
+  "description": "NextStep - End-to-End Resilient Decision Assistant Platform",
+  "main": "server/src/index.ts",
+  "scripts": {
+    "setup": "npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "test:scenarios": "npm run test:scenarios --prefix server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

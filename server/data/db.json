@@ -1,0 +1,637 @@
+{
+  "situations": [
+    {
+      "id": "sit_6d92bdbf",
+      "userId": "user_demo_1",
+      "createdAt": "2026-09-26T13:09:45.345Z",
+      "updatedAt": "2026-09-26T13:09:45.345Z",
+      "currentVersionNumber": 1,
+      "latestResponse": {
+        "mode": "degraded_fallback",
+        "summary": "System operated under high-load fallback mode (Simulated Peak Traffic (429)). We extracted key urgent issues and structured a quick action plan.",
+        "identifiedIssues": [
+          "Immediate Academic Deadline / Exam",
+          "Hardware Failure / Computer Inoperable",
+          "Financial & Housing Pressure"
+        ],
+        "priorities": [
+          {
+            "id": "p_deg_1",
+            "title": "Academic & Exam Deadline Preparation",
+            "rank": 1,
+            "urgency": "critical",
+            "impact": "Affects grade and academic evaluation",
+            "recommendedAction": "Identify minimum viable submission requirements or contact professor/TA immediately.",
+            "isTied": false,
+            "confidence": 0.8
+          },
+          {
+            "id": "p_deg_2",
+            "title": "Secure Alternative Working Computer",
+            "rank": 2,
+            "urgency": "high",
+            "impact": "Enables completion of digital tasks",
+            "recommendedAction": "Borrow a friend's laptop, visit campus computer lab, or use mobile IDE for emergency submission.",
+            "isTied": false,
+            "confidence": 0.85
+          },
+          {
+            "id": "p_deg_housing",
+            "title": "Landlord & Rent Timeline Negotiation",
+            "rank": 3,
+            "urgency": "high",
+            "impact": "Secures shelter stability",
+            "recommendedAction": "Send polite message requesting 3-day extension due to family emergency.",
+            "isTied": false,
+            "confidence": 0.8
+          }
+        ],
+        "constraints": [
+          {
+            "id": "c_deg_hw",
+            "description": "Primary workstation disabled",
+            "type": "time"
+          },
+          {
+            "id": "c_deg_fin",
+            "description": "Temporary liquidity constraint",
+            "type": "financial"
+          }
+        ],
+        "recommendedNextAction": "Identify minimum viable submission requirements or contact professor/TA immediately.",
+        "clarificationQuestions": [
+          "Which of these issues has a hard deadline within the next 6 hours?",
+          "Can any non-critical commitment be delayed by 24 hours?"
+        ],
+        "atRiskFlag": false,
+        "riskGuidance": null,
+        "confidenceScore": 0.75
+      }
+    },
+    {
+      "id": "sit_46432d85",
+      "userId": "user_demo_1",
+      "createdAt": "2026-09-26T13:13:10.477Z",
+      "updatedAt": "2026-09-26T13:13:48.305Z",
+      "currentVersionNumber": 2,
+      "latestResponse": {
+        "mode": "normal",
+        "summary": "Multi-constraint situation analyzed: prioritized family health emergency and academic viva ahead of secondary hardware/housing issues.",
+        "identifiedIssues": [
+          "Multiple concurrent commitments requiring prioritization"
+        ],
+        "priorities": [
+          {
+            "id": "p_def_1",
+            "title": "Triage Nearest 24-Hour Commitment",
+            "rank": 1,
+            "urgency": "high",
+            "impact": "Prevents acute deadline failure",
+            "recommendedAction": "Identify the single item with the strict penalty and execute immediate action step.",
+            "isTied": false,
+            "confidence": 0.85
+          }
+        ],
+        "constraints": [],
+        "recommendedNextAction": "Identify the single item with the strict penalty and execute immediate action step.",
+        "clarificationQuestions": [
+          "Do you have travel funds or family support in Surat?",
+          "Can a classmate share their laptop for 1 hour?"
+        ],
+        "atRiskFlag": false,
+        "confidenceScore": 0.91
+      }
+    }
+  ],
+  "versions": [
+    {
+      "id": "ver_b2bb2781",
+      "situationId": "sit_6d92bdbf",
+      "version": 1,
+      "rawInput": "Kal submission hai, laptop dead ho gaya, aur landlord bol raha hai 5 tareekh tak flat khaali karo. Paise bhi nahi hai abhi.",
+      "timestamp": "2026-09-26T13:09:45.345Z",
+      "structuredResponse": {
+        "mode": "degraded_fallback",
+        "summary": "System operated under high-load fallback mode (Simulated Peak Traffic (429)). We extracted key urgent issues and structured a quick action plan.",
+        "identifiedIssues": [
+          "Immediate Academic Deadline / Exam",
+          "Hardware Failure / Computer Inoperable",
+          "Financial & Housing Pressure"
+        ],
+        "priorities": [
+          {
+            "id": "p_deg_1",
+            "title": "Academic & Exam Deadline Preparation",
+            "rank": 1,
+            "urgency": "critical",
+            "impact": "Affects grade and academic evaluation",
+            "recommendedAction": "Identify minimum viable submission requirements or contact professor/TA immediately.",
+            "isTied": false,
+            "confidence": 0.8
+          },
+          {
+            "id": "p_deg_2",
+            "title": "Secure Alternative Working Computer",
+            "rank": 2,
+            "urgency": "high",
+            "impact": "Enables completion of digital tasks",
+            "recommendedAction": "Borrow a friend's laptop, visit campus computer lab, or use mobile IDE for emergency submission.",
+            "isTied": false,
+            "confidence": 0.85
+          },
+          {
+            "id": "p_deg_housing",
+            "title": "Landlord & Rent Timeline Negotiation",
+            "rank": 3,
+            "urgency": "high",
+            "impact": "Secures shelter stability",
+            "recommendedAction": "Send polite message requesting 3-day extension due to family emergency.",
+            "isTied": false,
+            "confidence": 0.8
+          }
+        ],
+        "constraints": [
+          {
+            "id": "c_deg_hw",
+            "description": "Primary workstation disabled",
+            "type": "time"
+          },
+          {
+            "id": "c_deg_fin",
+            "description": "Temporary liquidity constraint",
+            "type": "financial"
+          }
+        ],
+        "recommendedNextAction": "Identify minimum viable submission requirements or contact professor/TA immediately.",
+        "clarificationQuestions": [
+          "Which of these issues has a hard deadline within the next 6 hours?",
+          "Can any non-critical commitment be delayed by 24 hours?"
+        ],
+        "atRiskFlag": false,
+        "riskGuidance": null,
+        "confidenceScore": 0.75
+      },
+      "deltaSummary": null,
+      "isDegraded": true,
+      "idempotencyKey": "key_1790428169223"
+    },
+    {
+      "id": "ver_a84cf205",
+      "situationId": "sit_46432d85",
+      "version": 1,
+      "rawInput": "Kal submission hai, laptop dead ho gaya, aur landlord bol raha hai 5 tareekh tak flat khaali karo. Paise bhi nahi hai abhi.",
+      "timestamp": "2026-09-26T13:13:10.477Z",
+      "structuredResponse": {
+        "mode": "normal",
+        "summary": "Hinglish input successfully analyzed: extracted urgent academic, housing, and financial obligations without loss of context.",
+        "identifiedIssues": [
+          "Academic Viva / Submission tomorrow at 10am",
+          "Laptop hardware failure (won't boot)",
+          "Landlord eviction threat (flat vacate notice by 5th)"
+        ],
+        "priorities": [
+          {
+            "id": "p_multi_viva",
+            "title": "Inform Professor/TA & Request Viva Reschedule",
+            "rank": 1,
+            "urgency": "critical",
+            "impact": "Secures academic standing during emergency",
+            "recommendedAction": "Send brief email to Professor explaining emergency and requesting 24h extension or online slot.",
+            "isTied": false,
+            "confidence": 0.9
+          },
+          {
+            "id": "p_multi_laptop",
+            "title": "Secure Backup Workstation / Phone Submission",
+            "rank": 2,
+            "urgency": "high",
+            "impact": "Enables access to submission files",
+            "recommendedAction": "Access project code via GitHub or Google Drive on smartphone or campus lab computer.",
+            "isTied": false,
+            "confidence": 0.88
+          },
+          {
+            "id": "p_multi_rent",
+            "title": "Negotiate 3-Day Grace Period with Landlord",
+            "rank": 3,
+            "urgency": "high",
+            "impact": "Secures housing stability",
+            "recommendedAction": "Send clear WhatsApp message requesting extension till 8th due to family emergency.",
+            "isTied": false,
+            "confidence": 0.85
+          }
+        ],
+        "constraints": [
+          {
+            "id": "c_time_viva",
+            "description": "Hard deadline 10am tomorrow",
+            "type": "time"
+          },
+          {
+            "id": "c_fin",
+            "description": "Current cash flow constraint (no money currently)",
+            "type": "financial"
+          }
+        ],
+        "recommendedNextAction": "Send brief email to Professor explaining emergency and requesting 24h extension or online slot.",
+        "clarificationQuestions": [
+          "Do you have travel funds or family support in Surat?",
+          "Can a classmate share their laptop for 1 hour?"
+        ],
+        "atRiskFlag": false,
+        "confidenceScore": 0.91
+      },
+      "deltaSummary": null,
+      "isDegraded": false,
+      "idempotencyKey": "key_1790428388560"
+    },
+    {
+      "id": "ver_b02ce6b9",
+      "situationId": "sit_46432d85",
+      "version": 2,
+      "rawInput": "abcdefghijklmnopqrstuvwxyz",
+      "timestamp": "2026-09-26T13:13:48.305Z",
+      "structuredResponse": {
+        "mode": "normal",
+        "summary": "Multi-constraint situation analyzed: prioritized family health emergency and academic viva ahead of secondary hardware/housing issues.",
+        "identifiedIssues": [
+          "Multiple concurrent commitments requiring prioritization"
+        ],
+        "priorities": [
+          {
+            "id": "p_def_1",
+            "title": "Triage Nearest 24-Hour Commitment",
+            "rank": 1,
+            "urgency": "high",
+            "impact": "Prevents acute deadline failure",
+            "recommendedAction": "Identify the single item with the strict penalty and execute immediate action step.",
+            "isTied": false,
+            "confidence": 0.85
+          }
+        ],
+        "constraints": [],
+        "recommendedNextAction": "Identify the single item with the strict penalty and execute immediate action step.",
+        "clarificationQuestions": [
+          "Do you have travel funds or family support in Surat?",
+          "Can a classmate share their laptop for 1 hour?"
+        ],
+        "atRiskFlag": false,
+        "confidenceScore": 0.91
+      },
+      "isDegraded": false,
+      "deltaSummary": {
+        "previousVersion": 1,
+        "currentVersion": 2,
+        "deadlineShift": null,
+        "priorityChanges": [
+          "Top priority shifted from \"Inform Professor/TA & Request Viva Reschedule\" to \"Triage Nearest 24-Hour Commitment\" because new constraints were added."
+        ],
+        "newIssues": [
+          "Multiple concurrent commitments requiring prioritization"
+        ],
+        "resolvedIssues": [
+          "Academic Viva / Submission tomorrow at 10am",
+          "Laptop hardware failure (won't boot)",
+          "Landlord eviction threat (flat vacate notice by 5th)"
+        ],
+        "summaryDelta": "Top priority shifted from \"Inform Professor/TA & Request Viva Reschedule\" to \"Triage Nearest 24-Hour Commitment\" because new constraints were added. New issue identified: Multiple concurrent commitments requiring prioritization. Resolved issue: Academic Viva / Submission tomorrow at 10am, Laptop hardware failure (won't boot), Landlord eviction threat (flat vacate notice by 5th)."
+      }
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "audit_1790428185349_3uubh",
+      "userId": "user_demo_1",
+      "situationId": "sit_6d92bdbf",
+      "action": "CREATE_SITUATION",
+      "timestamp": "2026-09-26T13:09:45.349Z",
+      "details": {
+        "isDegraded": true,
+        "wasRepaired": false
+      }
+    },
+    {
+      "id": "audit_1790428390480_4m0a0",
+      "userId": "user_demo_1",
+      "situationId": "sit_46432d85",
+      "action": "CREATE_SITUATION",
+      "timestamp": "2026-09-26T13:13:10.480Z",
+      "details": {
+        "isDegraded": false,
+        "wasRepaired": false
+      }
+    },
+    {
+      "id": "audit_1790428428310_gwf23",
+      "userId": "user_demo_1",
+      "situationId": "sit_46432d85",
+      "action": "REASSESS_SITUATION",
+      "timestamp": "2026-09-26T13:13:48.310Z",
+      "details": {
+        "version": 2,
+        "delta": "Top priority shifted from \"Inform Professor/TA & Request Viva Reschedule\" to \"Triage Nearest 24-Hour Commitment\" because new constraints were added. New issue identified: Multiple concurrent commitments requiring prioritization. Resolved issue: Academic Viva / Submission tomorrow at 10am, Laptop hardware failure (won't boot), Landlord eviction threat (flat vacate notice by 5th)."
+      }
+    }
+  ],
+  "promptLogs": [
+    {
+      "id": "prompt_1790428185351_8n6yr",
+      "userId": "user_demo_1",
+      "situationId": "sit_6d92bdbf",
+      "prompt": "Kal submission hai, laptop dead ho gaya, aur landlord bol raha hai 5 tareekh tak flat khaali karo. Paise bhi nahi hai abhi.",
+      "output": "{\"mode\":\"degraded_fallback\",\"summary\":\"System operated under high-load fallback mode (Simulated Peak Traffic (429)). We extracted key urgent issues and structured a quick action plan.\",\"identifiedIssues\":[\"Immediate Academic Deadline / Exam\",\"Hardware Failure / Computer Inoperable\",\"Financial & Housing Pressure\"],\"priorities\":[{\"id\":\"p_deg_1\",\"title\":\"Academic & Exam Deadline Preparation\",\"rank\":1,\"urgency\":\"critical\",\"impact\":\"Affects grade and academic evaluation\",\"recommendedAction\":\"Identify minimum viable submission requirements or contact professor/TA immediately.\",\"isTied\":false,\"confidence\":0.8},{\"id\":\"p_deg_2\",\"title\":\"Secure Alternative Working Computer\",\"rank\":2,\"urgency\":\"high\",\"impact\":\"Enables completion of digital tasks\",\"recommendedAction\":\"Borrow a friend's laptop, visit campus computer lab, or use mobile IDE for emergency submission.\",\"isTied\":false,\"confidence\":0.85},{\"id\":\"p_deg_housing\",\"title\":\"Landlord & Rent Timeline Negotiation\",\"rank\":3,\"urgency\":\"high\",\"impact\":\"Secures shelter stability\",\"recommendedAction\":\"Send polite message requesting 3-day extension due to family emergency.\",\"isTied\":false,\"confidence\":0.8}],\"constraints\":[{\"id\":\"c_deg_hw\",\"description\":\"Primary workstation disabled\",\"type\":\"time\"},{\"id\":\"c_deg_fin\",\"description\":\"Temporary liquidity constraint\",\"type\":\"financial\"}],\"recommendedNextAction\":\"Identify minimum viable submission requirements or contact professor/TA immediately.\",\"clarificationQuestions\":[\"Which of these issues has a hard deadline within the next 6 hours?\",\"Can any non-critical commitment be delayed by 24 hours?\"],\"atRiskFlag\":false,\"riskGuidance\":null,\"confidenceScore\":0.75}",
+      "timestamp": "2026-09-26T13:09:45.351Z"
+    },
+    {
+      "id": "prompt_1790428390483_m5xi7",
+      "userId": "user_demo_1",
+      "situationId": "sit_46432d85",
+      "prompt": "Kal submission hai, laptop dead ho gaya, aur landlord bol raha hai 5 tareekh tak flat khaali karo. Paise bhi nahi hai abhi.",
+      "output": "{\"mode\":\"normal\",\"summary\":\"Hinglish input successfully analyzed: extracted urgent academic, housing, and financial obligations without loss of context.\",\"identifiedIssues\":[\"Academic Viva / Submission tomorrow at 10am\",\"Laptop hardware failure (won't boot)\",\"Landlord eviction threat (flat vacate notice by 5th)\"],\"priorities\":[{\"id\":\"p_multi_viva\",\"title\":\"Inform Professor/TA & Request Viva Reschedule\",\"rank\":1,\"urgency\":\"critical\",\"impact\":\"Secures academic standing during emergency\",\"recommendedAction\":\"Send brief email to Professor explaining emergency and requesting 24h extension or online slot.\",\"isTied\":false,\"confidence\":0.9},{\"id\":\"p_multi_laptop\",\"title\":\"Secure Backup Workstation / Phone Submission\",\"rank\":2,\"urgency\":\"high\",\"impact\":\"Enables access to submission files\",\"recommendedAction\":\"Access project code via GitHub or Google Drive on smartphone or campus lab computer.\",\"isTied\":false,\"confidence\":0.88},{\"id\":\"p_multi_rent\",\"title\":\"Negotiate 3-Day Grace Period with Landlord\",\"rank\":3,\"urgency\":\"high\",\"impact\":\"Secures housing stability\",\"recommendedAction\":\"Send clear WhatsApp message requesting extension till 8th due to family emergency.\",\"isTied\":false,\"confidence\":0.85}],\"constraints\":[{\"id\":\"c_time_viva\",\"description\":\"Hard deadline 10am tomorrow\",\"type\":\"time\"},{\"id\":\"c_fin\",\"description\":\"Current cash flow constraint (no money currently)\",\"type\":\"financial\"}],\"recommendedNextAction\":\"Send brief email to Professor explaining emergency and requesting 24h extension or online slot.\",\"clarificationQuestions\":[\"Do you have travel funds or family support in Surat?\",\"Can a classmate share their laptop for 1 hour?\"],\"atRiskFlag\":false,\"confidenceScore\":0.91}",
+      "timestamp": "2026-09-26T13:13:10.483Z"
+    },
+    {
+      "id": "prompt_1790428428312_rev3k",
+      "userId": "user_demo_1",
+      "situationId": "sit_46432d85",
+      "prompt": "abcdefghijklmnopqrstuvwxyz",
+      "output": "{\"mode\":\"normal\",\"summary\":\"Multi-constraint situation analyzed: prioritized family health emergency and academic viva ahead of secondary hardware/housing issues.\",\"identifiedIssues\":[\"Multiple concurrent commitments requiring prioritization\"],\"priorities\":[{\"id\":\"p_def_1\",\"title\":\"Triage Nearest 24-Hour Commitment\",\"rank\":1,\"urgency\":\"high\",\"impact\":\"Prevents acute deadline failure\",\"recommendedAction\":\"Identify the single item with the strict penalty and execute immediate action step.\",\"isTied\":false,\"confidence\":0.85}],\"constraints\":[],\"recommendedNextAction\":\"Identify the single item with the strict penalty and execute immediate action step.\",\"clarificationQuestions\":[\"Do you have travel funds or family support in Surat?\",\"Can a classmate share their laptop for 1 hour?\"],\"atRiskFlag\":false,\"confidenceScore\":0.91}",
+      "timestamp": "2026-09-26T13:13:48.312Z"
+    }
+  ],
+  "idempotencyStore": {
+    "key_1790428169223": {
+      "key": "key_1790428169223",
+      "payloadHash": "Kal submission hai, laptop dead ho gaya, aur landlord bol raha hai 5 tareekh tak flat khaali karo. Paise bhi nahi hai abhi.",
+      "result": {
+        "situation": {
+          "id": "sit_6d92bdbf",
+          "userId": "user_demo_1",
+          "createdAt": "2026-09-26T13:09:45.345Z",
+          "updatedAt": "2026-09-26T13:09:45.345Z",
+          "currentVersionNumber": 1,
+          "latestResponse": {
+            "mode": "degraded_fallback",
+            "summary": "System operated under high-load fallback mode (Simulated Peak Traffic (429)). We extracted key urgent issues and structured a quick action plan.",
+            "identifiedIssues": [
+              "Immediate Academic Deadline / Exam",
+              "Hardware Failure / Computer Inoperable",
+              "Financial & Housing Pressure"
+            ],
+            "priorities": [
+              {
+                "id": "p_deg_1",
+                "title": "Academic & Exam Deadline Preparation",
+                "rank": 1,
+                "urgency": "critical",
+                "impact": "Affects grade and academic evaluation",
+                "recommendedAction": "Identify minimum viable submission requirements or contact professor/TA immediately.",
+                "isTied": false,
+                "confidence": 0.8
+              },
+              {
+                "id": "p_deg_2",
+                "title": "Secure Alternative Working Computer",
+                "rank": 2,
+                "urgency": "high",
+                "impact": "Enables completion of digital tasks",
+                "recommendedAction": "Borrow a friend's laptop, visit campus computer lab, or use mobile IDE for emergency submission.",
+                "isTied": false,
+                "confidence": 0.85
+              },
+              {
+                "id": "p_deg_housing",
+                "title": "Landlord & Rent Timeline Negotiation",
+                "rank": 3,
+                "urgency": "high",
+                "impact": "Secures shelter stability",
+                "recommendedAction": "Send polite message requesting 3-day extension due to family emergency.",
+                "isTied": false,
+                "confidence": 0.8
+              }
+            ],
+            "constraints": [
+              {
+                "id": "c_deg_hw",
+                "description": "Primary workstation disabled",
+                "type": "time"
+              },
+              {
+                "id": "c_deg_fin",
+                "description": "Temporary liquidity constraint",
+                "type": "financial"
+              }
+            ],
+            "recommendedNextAction": "Identify minimum viable submission requirements or contact professor/TA immediately.",
+            "clarificationQuestions": [
+              "Which of these issues has a hard deadline within the next 6 hours?",
+              "Can any non-critical commitment be delayed by 24 hours?"
+            ],
+            "atRiskFlag": false,
+            "riskGuidance": null,
+            "confidenceScore": 0.75
+          }
+        },
+        "version": {
+          "id": "ver_b2bb2781",
+          "situationId": "sit_6d92bdbf",
+          "version": 1,
+          "rawInput": "Kal submission hai, laptop dead ho gaya, aur landlord bol raha hai 5 tareekh tak flat khaali karo. Paise bhi nahi hai abhi.",
+          "timestamp": "2026-09-26T13:09:45.345Z",
+          "structuredResponse": {
+            "mode": "degraded_fallback",
+            "summary": "System operated under high-load fallback mode (Simulated Peak Traffic (429)). We extracted key urgent issues and structured a quick action plan.",
+            "identifiedIssues": [
+              "Immediate Academic Deadline / Exam",
+              "Hardware Failure / Computer Inoperable",
+              "Financial & Housing Pressure"
+            ],
+            "priorities": [
+              {
+                "id": "p_deg_1",
+                "title": "Academic & Exam Deadline Preparation",
+                "rank": 1,
+                "urgency": "critical",
+                "impact": "Affects grade and academic evaluation",
+                "recommendedAction": "Identify minimum viable submission requirements or contact professor/TA immediately.",
+                "isTied": false,
+                "confidence": 0.8
+              },
+              {
+                "id": "p_deg_2",
+                "title": "Secure Alternative Working Computer",
+                "rank": 2,
+                "urgency": "high",
+                "impact": "Enables completion of digital tasks",
+                "recommendedAction": "Borrow a friend's laptop, visit campus computer lab, or use mobile IDE for emergency submission.",
+                "isTied": false,
+                "confidence": 0.85
+              },
+              {
+                "id": "p_deg_housing",
+                "title": "Landlord & Rent Timeline Negotiation",
+                "rank": 3,
+                "urgency": "high",
+                "impact": "Secures shelter stability",
+                "recommendedAction": "Send polite message requesting 3-day extension due to family emergency.",
+                "isTied": false,
+                "confidence": 0.8
+              }
+            ],
+            "constraints": [
+              {
+                "id": "c_deg_hw",
+                "description": "Primary workstation disabled",
+                "type": "time"
+              },
+              {
+                "id": "c_deg_fin",
+                "description": "Temporary liquidity constraint",
+                "type": "financial"
+              }
+            ],
+            "recommendedNextAction": "Identify minimum viable submission requirements or contact professor/TA immediately.",
+            "clarificationQuestions": [
+              "Which of these issues has a hard deadline within the next 6 hours?",
+              "Can any non-critical commitment be delayed by 24 hours?"
+            ],
+            "atRiskFlag": false,
+            "riskGuidance": null,
+            "confidenceScore": 0.75
+          },
+          "deltaSummary": null,
+          "isDegraded": true,
+          "idempotencyKey": "key_1790428169223"
+        },
+        "_meta": {
+          "wasRepaired": false,
+          "isDegraded": true,
+          "processingLogs": [
+            "Chaos mode active: Simulating Provider 429 Rate Limit error."
+          ],
+          "idempotencyKey": "key_1790428169223"
+        }
+      },
+      "timestamp": 1790428185353
+    },
+    "key_1790428388560": {
+      "key": "key_1790428388560",
+      "payloadHash": "Kal submission hai, laptop dead ho gaya, aur landlord bol raha hai 5 tareekh tak flat khaali karo. Paise bhi nahi hai abhi.",
+      "result": {
+        "situation": {
+          "id": "sit_46432d85",
+          "userId": "user_demo_1",
+          "createdAt": "2026-09-26T13:13:10.477Z",
+          "updatedAt": "2026-09-26T13:13:48.305Z",
+          "currentVersionNumber": 2,
+          "latestResponse": {
+            "mode": "normal",
+            "summary": "Multi-constraint situation analyzed: prioritized family health emergency and academic viva ahead of secondary hardware/housing issues.",
+            "identifiedIssues": [
+              "Multiple concurrent commitments requiring prioritization"
+            ],
+            "priorities": [
+              {
+                "id": "p_def_1",
+                "title": "Triage Nearest 24-Hour Commitment",
+                "rank": 1,
+                "urgency": "high",
+                "impact": "Prevents acute deadline failure",
+                "recommendedAction": "Identify the single item with the strict penalty and execute immediate action step.",
+                "isTied": false,
+                "confidence": 0.85
+              }
+            ],
+            "constraints": [],
+            "recommendedNextAction": "Identify the single item with the strict penalty and execute immediate action step.",
+            "clarificationQuestions": [
+              "Do you have travel funds or family support in Surat?",
+              "Can a classmate share their laptop for 1 hour?"
+            ],
+            "atRiskFlag": false,
+            "confidenceScore": 0.91
+          }
+        },
+        "version": {
+          "id": "ver_a84cf205",
+          "situationId": "sit_46432d85",
+          "version": 1,
+          "rawInput": "Kal submission hai, laptop dead ho gaya, aur landlord bol raha hai 5 tareekh tak flat khaali karo. Paise bhi nahi hai abhi.",
+          "timestamp": "2026-09-26T13:13:10.477Z",
+          "structuredResponse": {
+            "mode": "normal",
+            "summary": "Hinglish input successfully analyzed: extracted urgent academic, housing, and financial obligations without loss of context.",
+            "identifiedIssues": [
+              "Academic Viva / Submission tomorrow at 10am",
+              "Laptop hardware failure (won't boot)",
+              "Landlord eviction threat (flat vacate notice by 5th)"
+            ],
+            "priorities": [
+              {
+                "id": "p_multi_viva",
+                "title": "Inform Professor/TA & Request Viva Reschedule",
+                "rank": 1,
+                "urgency": "critical",
+                "impact": "Secures academic standing during emergency",
+                "recommendedAction": "Send brief email to Professor explaining emergency and requesting 24h extension or online slot.",
+                "isTied": false,
+                "confidence": 0.9
+              },
+              {
+                "id": "p_multi_laptop",
+                "title": "Secure Backup Workstation / Phone Submission",
+                "rank": 2,
+                "urgency": "high",
+                "impact": "Enables access to submission files",
+                "recommendedAction": "Access project code via GitHub or Google Drive on smartphone or campus lab computer.",
+                "isTied": false,
+                "confidence": 0.88
+              },
+              {
+                "id": "p_multi_rent",
+                "title": "Negotiate 3-Day Grace Period with Landlord",
+                "rank": 3,
+                "urgency": "high",
+                "impact": "Secures housing stability",
+                "recommendedAction": "Send clear WhatsApp message requesting extension till 8th due to family emergency.",
+                "isTied": false,
+                "confidence": 0.85
+              }
+            ],
+            "constraints": [
+              {
+                "id": "c_time_viva",
+                "description": "Hard deadline 10am tomorrow",
+                "type": "time"
+              },
+              {
+                "id": "c_fin",
+                "description": "Current cash flow constraint (no money currently)",
+                "type": "financial"
+              }
+            ],
+            "recommendedNextAction": "Send brief email to Professor explaining emergency and requesting 24h extension or online slot.",
+            "clarificationQuestions": [
+              "Do you have travel funds or family support in Surat?",
+              "Can a classmate share their laptop for 1 hour?"
+            ],
+            "atRiskFlag": false,
+            "confidenceScore": 0.91
+          },
+          "deltaSummary": null,
+          "isDegraded": false,
+          "idempotencyKey": "key_1790428388560"
+        },
+        "_meta": {
+          "wasRepaired": false,
+          "isDegraded": false,
+          "processingLogs": [
+            "AI Reasoning pipeline executed successfully."
+          ],
+          "idempotencyKey": "key_1790428388560"
+        }
+      },
+      "timestamp": 1790428390485
+    }
+  }
+}

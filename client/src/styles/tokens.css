@@ -1,0 +1,145 @@
+:root {
+  /* Grounded, Warm Organic Paper & Ink Palette (Non-AI, Human & Calm Feel) */
+  --bg-primary: #f6f5f0;        /* Warm light linen / off-white paper */
+  --bg-surface: #ffffff;        /* Crisp white card background */
+  --bg-card: #f0eee6;           /* Soft warm cream container */
+  --bg-card-hover: #e7e4d8;     /* Warm neutral hover state */
+
+  --text-primary: #1c221e;      /* Deep obsidian ink */
+  --text-secondary: #4a544e;    /* Warm slate gray */
+  --text-muted: #78827b;        /* Muted soft sage-gray */
+
+  --accent-primary: #2d5a27;    /* Deep Forest Sage (Calm, Grounded, Human) */
+  --accent-hover: #1e3f1b;      /* Rich dark forest green */
+  --accent-glow: rgba(45, 90, 39, 0.12);
+
+  --color-critical: #c93b2b;    /* Warm crimson */
+  --color-high: #d97706;        /* Warm terracotta amber */
+  --color-medium: #b45309;      /* Ochre gold */
+  --color-low: #2d5a27;         /* Soft forest green */
+  --color-tied: #7c3aed;        /* Warm plum violet */
+
+  --border-color: #e2dfd5;      /* Natural warm paper border */
+  --border-highlight: #2d5a27;  /* Active border */
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Calm / Safety Palette for Scenario 4 (Soft Sage & Warm Earth) */
+.calm-mode-theme {
+  --bg-primary: #f0f4f1;
+  --bg-surface: #ffffff;
+  --bg-card: #e2eae4;
+  --accent-primary: #235347;
+  --accent-hover: #163830;
+  --accent-glow: rgba(35, 83, 71, 0.15);
+  --text-primary: #122923;
+  --text-secondary: #395c52;
+  --border-color: #cad8ce;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-primary);
+}
+
+.glass-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-critical { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+.badge-high { background: #ffedd5; color: #9a3412; border: 1px solid #fdba74; }
+.badge-medium { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+.badge-low { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+.badge-tied { background: #f3e8ff; color: #6b21a8; border: 1px solid #d8b4fe; }
+.badge-degraded { background: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent-primary);
+  color: white;
+  box-shadow: 0 2px 8px var(--accent-glow);
+}
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+.btn-secondary:hover {
+  background: var(--bg-card);
+  border-color: var(--border-highlight);
+}
+
+.btn-danger {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+.btn-danger:hover {
+  background: #fecaca;
+}
